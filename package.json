@@ -10,13 +10,19 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.3",
     "@nuxt/eslint": "^1.15.2",
     "@nuxt/icon": "^2.2.1",
     "@nuxtjs/color-mode": "^4.0.0",
     "@tailwindcss/vite": "^4.2.4",
+    "@tursodatabase/database": "^0.5.3",
+    "drizzle-orm": "^1.0.0-beta.22",
     "nuxt": "^4.4.2",
     "tailwindcss": "^4.2.4",
     "vue": "^3.5.33",
@@ -27,6 +33,7 @@
     "@antfu/eslint-config": "^8.2.0",
     "@iconify-json/tabler": "^1.2.33",
     "daisyui": "^5.5.19",
+    "drizzle-kit": "^1.0.0-beta.22",
     "eslint": "^10.2.1",
     "eslint-plugin-format": "^2.0.1",
     "eslint-plugin-perfectionist": "^5.9.0",
